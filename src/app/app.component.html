@@ -1,0 +1,13 @@
+<main>
+  <app-header></app-header>
+  <section>
+    <kendo-splitter style="width: 100%; height: 100%; padding: 40px 0 ">
+      <kendo-splitter-pane size="60%" min="40%">
+        <app-album-list [albums]="albums" (albumSelected)="onAlbumChange($event)"></app-album-list>
+      </kendo-splitter-pane>
+      <kendo-splitter-pane min="30%">
+        <app-song-list [tracks]="tracks" [currentAlbum]="currentAlbum"></app-song-list>
+      </kendo-splitter-pane>
+    </kendo-splitter>
+  </section>
+</main>
