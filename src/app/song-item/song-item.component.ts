@@ -10,7 +10,7 @@ export class SongItemComponent implements OnInit {
   constructor() {
   }
 
-  @Input() track = {duration_ms: 0};
+  @Input() track = {duration_ms: 0, explicit: true, name: 'N/A'};
 
   get songDuration() {
     const {duration_ms} = this.track;

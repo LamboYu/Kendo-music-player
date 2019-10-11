@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class AlbumComponent implements OnInit {
 
-  @Input() album: { images: Array<any> };
+  @Input() album: { images: Array<any>, name: string };
   @Output() albumSelected = new EventEmitter<Object>();
   albumCover: {};
 

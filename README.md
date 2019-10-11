@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Get access token
+
+Refer to [Client Credential Flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#client-credentials-flow) to obtain the access token.
+
+Run following command:
+
+`curl -X "POST" -H "Authorization: Basic MjE5ZTJmZWEzNGIwNDJiNGI3ZTJmYTRmYWI4MTBhOWU6MDg1ZGE0ZWU0NGU0NDg4Zjg1ZjliNGM1NGNhZjIzMjY=" -d grant_type=client_credentials https://accounts.spotify.com/api/token`
